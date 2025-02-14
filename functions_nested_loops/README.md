@@ -1,9 +1,12 @@
 # Project Title
-This project includes a function to check for lowercase characters.
+
+This project includes a function to check for alphabetic characters.
+
 ## Files
 - `main.h`: Header file containing function prototypes.
-- `3-islower.c`: Function to check for lowercase characters.
+- `4-isalpha.c`: Function to check for alphabetic characters.
+
 ## Compilation
 Compile the files using:
 ```sh
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-islower.c -o 3-islower
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha
