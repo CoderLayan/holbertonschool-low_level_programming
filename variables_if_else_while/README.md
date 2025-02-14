@@ -1,6 +1,6 @@
-# 0-positive_or_negative
+# 1-last_digit
 
-This program assigns a random number to the variable `n` each time it is executed and prints whether the number stored in the variable `n` is positive, negative, or zero.
+This program assigns a random number to the variable `n` each time it is executed and prints the last digit of the number stored in the variable `n`.
 
 ## Requirements
 
