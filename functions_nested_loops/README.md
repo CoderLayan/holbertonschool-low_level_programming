@@ -1,13 +1,13 @@
 # Project Title
 
-This project includes a function to print the last digit of a number.
+This project includes a function to print every minute of the day of Jack Bauer.
 
 ## Files
 - `main.h`: Header file containing function prototypes.
-- `7-print_last_digit.c`: Function to print the last digit of a number.
+- `8-24_hours.c`: Function to print every minute of the day of Jack Bauer.
 
 ## Compilation
 Compile the files using:
 ```sh
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24
 
