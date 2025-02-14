@@ -17,7 +17,13 @@ _putchar(' ');
 if (result < 10)
 _putchar(' ');
 }
+if (result < 10)
 _putchar(result + '0');
+else
+{
+_putchar((result / 10) + '0');
+_putchar((result % 10) + '0');
+}
 }
 _putchar('\n');
 }
