@@ -1,6 +1,6 @@
-# 8-print_base16
+# 9-print_comb
 
-This program prints all the numbers of base 16 in lowercase, followed by a new line. The program only uses the `putchar` function three times. All the code is within the main function.
+This program prints all possible combinations of single-digit numbers, separated by commas and spaces, and in ascending order. The program only uses the `putchar` function four times. All the code is within the main function.
 
 ## Requirements
 
