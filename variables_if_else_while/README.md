@@ -1,6 +1,6 @@
-# 7-print_tebahpla
+# 8-print_base16
 
-This program prints the lowercase alphabet in reverse, followed by a new line. The program only uses the `putchar` function twice. All the code is within the main function.
+This program prints all the numbers of base 16 in lowercase, followed by a new line. The program only uses the `putchar` function three times. All the code is within the main function.
 
 ## Requirements
 
