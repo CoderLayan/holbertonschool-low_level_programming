@@ -1,6 +1,6 @@
-# 6-print_numberz
+# 7-print_tebahpla
 
-This program prints all single digit numbers of base 10 starting from 0, followed by a new line. The program does not use any variable of type `char` and only uses the `putchar` function twice. All the code is within the main function.
+This program prints the lowercase alphabet in reverse, followed by a new line. The program only uses the `putchar` function twice. All the code is within the main function.
 
 ## Requirements
 
