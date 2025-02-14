@@ -1,6 +1,6 @@
-# 0-putchar
+# 1-alphabet
 
-This program prints `_putchar`, followed by a new line.
+This program contains a function that prints the alphabet in lowercase, followed by a new line.
 
 ## Requirements
 
