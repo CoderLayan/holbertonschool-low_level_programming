@@ -1,6 +1,6 @@
-# 5-print_numbers
+# 6-print_numberz
 
-This program prints all single digit numbers of base 10 starting from 0, followed by a new line. All the code is within the main function.
+This program prints all single digit numbers of base 10 starting from 0, followed by a new line. The program does not use any variable of type `char` and only uses the `putchar` function twice. All the code is within the main function.
 
 ## Requirements
 
