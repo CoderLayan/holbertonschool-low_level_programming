@@ -1,6 +1,6 @@
-# 3-print_alphabets
+# 4-print_alphabt
 
-This program prints the alphabet in lowercase, followed by uppercase, followed by a new line. It only uses the `putchar` function and complies with the given requirements.
+This program prints the alphabet in lowercase, followed by a new line. It prints all the letters except 'q' and 'e'. The program only uses the `putchar` function and complies with the given requirements.
 
 ## Requirements
 
@@ -11,4 +11,4 @@ This program prints the alphabet in lowercase, followed by uppercase, followed b
 - No errors and no warnings during compilation
 - You are not allowed to use `system`
 - Code should use the Betty style, checked using `betty-style.pl` and `betty-doc.pl`
-- You can only use the `putchar` function three times in your code
+- You can only use the `putchar` function twice in your code
