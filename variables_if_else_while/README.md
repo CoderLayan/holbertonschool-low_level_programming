@@ -1,6 +1,6 @@
-# 1-last_digit
+# 2-print_alphabet
 
-This program assigns a random number to the variable `n` each time it is executed and prints the last digit of the number stored in the variable `n`.
+This program prints the alphabet in lowercase, followed by a new line. It only uses the `putchar` function and complies with the given requirements.
 
 ## Requirements
 
@@ -11,3 +11,4 @@ This program assigns a random number to the variable `n` each time it is execute
 - No errors and no warnings during compilation
 - You are not allowed to use `system`
 - Code should use the Betty style, checked using `betty-style.pl` and `betty-doc.pl`
+- You can only use the `putchar` function twice in your code`
