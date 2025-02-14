@@ -1,6 +1,6 @@
-# 4-print_alphabt
+# 5-print_numbers
 
-This program prints the alphabet in lowercase, followed by a new line. It prints all the letters except 'q' and 'e'. The program only uses the `putchar` function and complies with the given requirements.
+This program prints all single digit numbers of base 10 starting from 0, followed by a new line. All the code is within the main function.
 
 ## Requirements
 
@@ -11,4 +11,3 @@ This program prints the alphabet in lowercase, followed by a new line. It prints
 - No errors and no warnings during compilation
 - You are not allowed to use `system`
 - Code should use the Betty style, checked using `betty-style.pl` and `betty-doc.pl`
-- You can only use the `putchar` function twice in your code
