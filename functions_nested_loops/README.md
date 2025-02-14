@@ -1,16 +1,13 @@
-# 1-alphabet
+# Project Title
 
-This program contains a function that prints the alphabet in lowercase, followed by a new line.
+This project includes functions to check for lowercase characters and print the alphabet ten times.
 
-## Requirements
+## Files
+- `main.h`: Header file containing function prototypes.
+- `3-islower.c`: Function to check for lowercase characters.
+- `2-print_alphabet_x10.c`: Function to print the alphabet ten times.
 
-- Allowed editors: vi, vim, emacs
-- All files will be compiled on Ubuntu 20.04 LTS using gcc with the options -Wall -Werror -Wextra -pedantic -std=gnu89
-- All files should end with a new line
-- A `README.md` file at the root of the project folder is mandatory
-- Code should use the Betty style and will be checked using `betty-style.pl` and `betty-doc.pl`
-- No global variables allowed
-- No more than 5 functions per file
-- Standard library functions (e.g., `printf`, `puts`) are forbidden
-- You are allowed to use `_putchar`
-- The prototypes of all your functions and `_putchar` should be included in your header file `main.h`
+## Compilation
+Compile the files using:
+```sh
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
