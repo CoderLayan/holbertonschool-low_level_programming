@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * is_separator - Checks if a character is a separator.
 * @c: The character to check.
 *
@@ -22,7 +22,7 @@ return (1);
 return (0);
 }
 
-/*
+/**
 * cap_string - Capitalizes all words of a string.
 * @str: The string to be modified.
 *
