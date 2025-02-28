@@ -2,28 +2,19 @@
 #include <stdio.h>
 
 /**
-* main - Check the code
-*
-* Return: Always 0.
-*/
+ * main - Tests the _atoi function.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-int nb;
-nb = _atoi("98");
-printf("%d\n", nb);
-nb = _atoi("-402");
-printf("%d\n", nb);
-nb = _atoi("          ------++++++-----+++++--98");
-printf("%d\n", nb);
-nb = _atoi("214748364");
-printf("%d\n", nb);
-nb = _atoi("0");
-printf("%d\n", nb);
-nb = _atoi("Suite 402");
-printf("%d\n", nb);
-nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-printf("%d\n", nb);
-nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-printf("%d\n", nb);
+printf("%d\n", _atoi("98")); /* Expected: 98 */
+printf("%d\n", _atoi("-402")); /* Expected: -402 */
+printf("%d\n", _atoi("   ------++++++-----+++++--98")); /* Expected: -98 */
+printf("%d\n", _atoi("2147483647")); /* Expected: 2147483647 */
+printf("%d\n", _atoi("-2147483648")); /* Expected: -2147483648 */
+printf("%d\n", _atoi("0")); /* Expected: 0 */
+printf("%d\n", _atoi("Suite 402")); /* Expected: 402 */
+printf("%d\n", _atoi("---++++ -++ 402 #cisfun :)")); /* Expected: 402 */
 return (0);
 }
