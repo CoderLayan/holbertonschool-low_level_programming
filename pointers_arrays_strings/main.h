@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char c);
-char *cap_string(char *str);
+char *leet(char *str);
 
 #endif /* MAIN_H */
