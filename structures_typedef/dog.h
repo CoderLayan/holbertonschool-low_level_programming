@@ -1,6 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
-#include <stddef.h>  
+
+#include <stddef.h> /* Ensure this is included for NULL */
+
 /**
  * struct dog - a dog's basic info
  * @name: First member
@@ -15,6 +17,7 @@ char *name;
 float age;
 char *owner;
 };
+/* Function prototype */
 void init_dog(struct dog *d, char *name, float age, char *owner);
-#endif /* DOG_H */
 
+#endif /* DOG_H */
