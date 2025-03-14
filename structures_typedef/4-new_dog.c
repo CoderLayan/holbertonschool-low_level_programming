@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
-
-/*
+#include <string.h>
+/**
 * _strlength - Calculates the length of a string.
 * @str: The string whose length is to be calculated.
 *
@@ -14,7 +14,7 @@ while (str[len] != '\0')
 len++;
 return (len);
 }
-/*
+/**
 * _strcopy - Copies a string from source to destination.
 * @dest: Destination buffer.
 * @src: Source string.
@@ -41,7 +41,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;
 char *new_name, *new_owner;
-/* Allocate memory for the new dog structure */
+/* Allocate memory for the dog structure */
 new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 return (NULL);
@@ -62,7 +62,7 @@ free(new_dog);
 return (NULL);
 }
 _strcopy(new_owner, owner);
-/* Initialize the new dog's fields */
+/* Initialize the dog structure */
 new_dog->name = new_name;
 new_dog->age = age;
 new_dog->owner = new_owner;
