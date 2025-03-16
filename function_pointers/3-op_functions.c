@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
+/**
 * op_add - Returns the sum of a and b.
 * @a: First integer.
 * @b: Second integer.
@@ -14,7 +14,7 @@ int op_add(int a, int b)
 return (a + b);
 }
 
-/*
+/**
 * op_sub - Returns the difference of a and b.
 * @a: First integer.
 * @b: Second integer.
@@ -26,7 +26,7 @@ int op_sub(int a, int b)
 return (a - b);
 }
 
-/*
+/**
 * op_mul - Returns the product of a and b.
 * @a: First integer.
 * @b: Second integer.
