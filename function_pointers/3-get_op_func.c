@@ -18,6 +18,9 @@ op_t ops[] = {
 };
 
 int i = 0;
+/* Ensure the operator is a single character */
+if (s == NULL || s[1] != '\0')
+return (NULL);
 
 while (ops[i].op != NULL)
 {
@@ -26,6 +29,6 @@ return (ops[i].f);
 i++;
 }
 
-return (NULL);
+return (NULL); /* Return NULL if no valid operator is found */
 }
 
