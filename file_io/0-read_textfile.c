@@ -24,16 +24,12 @@ return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
-
-/* Allocate buffer */
 buffer = malloc(sizeof(char) * letters);
 if (!buffer)
 {
 close(fd);
 return (0);
 }
-
-/* Read the file */
 bytes_read = read(fd, buffer, letters);
 if (bytes_read == -1)
 {
@@ -41,8 +37,6 @@ free(buffer);
 close(fd);
 return (0);
 }
-
-/* Write to standard output */
 bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 if (bytes_written == -1 || bytes_written != bytes_read)
 {
@@ -50,8 +44,6 @@ free(buffer);
 close(fd);
 return (0);
 }
-
-/* Clean up */
 free(buffer);
 close(fd);
 
