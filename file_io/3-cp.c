@@ -54,8 +54,8 @@ if (write_count != read_count || write_count == -1)
 error_exit(99, "Error: Can't write to %s\n", argv[2]);
 }
 
-/* Check for read error after the loop */
-if (read_count == -1)
+/* Handle read error specifically after the loop ends */
+if (read_count == -1)  /* A failure occurred during read */
 error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
 /* Close file_from */
