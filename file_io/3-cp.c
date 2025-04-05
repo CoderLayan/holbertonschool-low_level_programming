@@ -32,30 +32,37 @@ int main(int argc, char *argv[])
 int file_from, file_to, read_count, write_count;
 char buffer[BUFFER_SIZE];
 
+/* Check for correct number of arguments */
 if (argc != 3)
 error_exit(97, "Usage: cp file_from file_to\n", "");
 
+/* Open source file */
 file_from = open(argv[1], O_RDONLY);
 if (file_from == -1)
 error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
+/* Open (or create) destination file */
 file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (file_to == -1)
 error_exit(99, "Error: Can't write to %s\n", argv[2]);
 
+/* Read and write in chunks of BUFFER_SIZE */
 while ((read_count = read(file_from, buffer, BUFFER_SIZE)) > 0)
 {
 write_count = write(file_to, buffer, read_count);
-if (write_count != read_count)
+if (write_count != read_count || write_count == -1)
 error_exit(99, "Error: Can't write to %s\n", argv[2]);
 }
 
+/* Check for read error after the loop */
 if (read_count == -1)
 error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
+/* Close file_from */
 if (close(file_from) == -1)
 error_exit(100, "Error: Can't close fd %d\n", argv[1]);
 
+/* Close file_to */
 if (close(file_to) == -1)
 error_exit(100, "Error: Can't close fd %d\n", argv[2]);
 
