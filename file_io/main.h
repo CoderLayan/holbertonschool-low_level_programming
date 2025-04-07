@@ -1,15 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stddef.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <fcntl.h>
 
-/**
-* error_exit - Prints error message and exits with a code.
-* @code: The exit code.
-* @msg: The error message.
-* @fd: The file descriptor to close (use -1 if no file descriptor to close).
-*/
-void error_exit(int code, const char *msg, int fd);
-
+int _putchar(char c);
+ssize_t read_textfile(const char *filename, size_t letters);
+int create_file(const char *filename, char *text_content);
+int append_text_to_file(const char *filename, char *text_content);
 #endif /* MAIN_H */
